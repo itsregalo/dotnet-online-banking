@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Payees";
+}
+
+<h1>Payees</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Payee ID</th>
+            <th>Payee Name</th>
+            <th>Payee Address</th>
+            <th>Payee City</th>
+            <th>Payee State</th>
+            <th>Payee Zip Code</th>
+            <th>Payee Account Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payee in Model)
+        {
+            <tr>
+                <td>@payee.Id</td>
+                <td>@payee.PayeeName</td>
+                <td>@payee.PayeeAddress</td>
+                <td>@payee.PayeeCity</td>
+                <td>@payee.PayeeState</td>
+                <td>@payee.PayeeZipCode</td>
+                <td>@payee.PayeeAccountNumber</td>
+            </tr>
+        }
+    </tbody>
+</table>
