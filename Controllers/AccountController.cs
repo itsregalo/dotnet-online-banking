@@ -1,3 +1,10 @@
+using Microsoft.AspNetCore.Mvc;
+using online_banking.Models;
+
+// for IRepository 
+using Microsoft.EntityFrameworkCore;
+
+
 public class AccountController : Controller
 {
     private readonly IRepository<Account> _accountRepository;
@@ -98,12 +105,6 @@ public class AccountController : Controller
         var history = user.Accounts.First().AccountActivities;
 
         return Json(history);
-    }
-
-
-
-
-
-    
+    } 
 }
 

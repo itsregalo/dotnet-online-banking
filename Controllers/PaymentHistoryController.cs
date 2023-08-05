@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Mvc;
+using online_banking.Models;
+
 public class PaymentHistoryController : Controller
 {
     private readonly IRepository<PaymentHistory> _paymentHistoryRepository;

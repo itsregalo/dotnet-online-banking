@@ -1,3 +1,7 @@
+using Microsoft.AspNetCore.Mvc;
+using online_banking.Models;
+
+
 public class PayeeController : Controller
 {
     private readonly IRepository<Payee> _payeeRepository;
